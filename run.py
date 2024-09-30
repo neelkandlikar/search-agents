@@ -530,7 +530,6 @@ def test(
                         next_action = curr_actions[-1]
                         actions_at_depth[curr_depth] += 1
                         assert len(curr_actions) == curr_depth + 1, f"(depth+1) should be equal to the number of actions taken, but got {len(curr_actions)} and {curr_depth+1}"
-
                         if next_action["action_type"] == ActionTypes.NONE:
                             maybe_update_best_action(0, curr_actions)
                         else:

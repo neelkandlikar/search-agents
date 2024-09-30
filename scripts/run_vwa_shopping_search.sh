@@ -1,6 +1,6 @@
 #!/bin/bash
 
-model="gpt-4o"
+model="gpt-4o-mini"
 max_depth=4  # max_depth=4 means 5 step lookahead
 max_steps=5
 branching_factor=5
@@ -16,12 +16,12 @@ batch_size=5
 # Define the starting and ending indices
 start_idx=0
 end_idx=$((start_idx + batch_size))
-max_idx=466
+max_idx=10
 
 # Loop until the starting index is less than or equal to max_idx.
 while [ $start_idx -le $max_idx ]
 do
-    bash scripts/reset_shopping.sh
+    # bash scripts/reset_shopping.sh
     bash prepare.sh
     python run.py \
         --instruction_path $instruction_path \
