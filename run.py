@@ -109,7 +109,7 @@ def config() -> argparse.Namespace:
     parser.add_argument("--max_steps", type=int, default=30)
 
     # agent config
-    parser.add_argument("--agent_type", type=str, default="prompt", choices=["prompt", "search"])
+    parser.add_argument("--agent_type", type=str, default="search", choices=["prompt", "search"])
     parser.add_argument(
         "--instruction_path",
         type=str,

@@ -23,7 +23,7 @@ while [ $start_idx -le $max_idx ]
 do
     # bash scripts/reset_shopping.sh
     bash prepare.sh
-    python run.py \
+    python run_mcts.py \
         --instruction_path $instruction_path \
         --test_start_idx $start_idx \
         --test_end_idx $end_idx \
