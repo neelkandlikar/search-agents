@@ -7,3 +7,7 @@ log_files/log_20241008133043_7992.log
 log_files/log_20241008134547_100.log
 log_files/log_20241008134852_8538.log
 log_files/log_20241008135556_5562.log
+log_files/log_20241021141702_9207.log
+log_files/log_20241021142012_4542.log
+log_files/log_20241021142226_4364.log
+log_files/log_20241021153453_7427.log

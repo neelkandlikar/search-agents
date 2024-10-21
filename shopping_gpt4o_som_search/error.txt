@@ -105,3 +105,9 @@ playwright._impl._api_types.Error: net::ERR_INTERNET_DISCONNECTED at http://ec2-
 =========================== logs ===========================
 navigating to "http://ec2-3-131-244-37.us-east-2.compute.amazonaws.com:7770/", waiting until "load"
 ============================================================
+[Config file]: /var/folders/nk/_ysc0b1j4p13gcjtqn0f_8480000gn/T/tmpo2ebyq3y/0.json
+[Unhandled Error] TypeError("ScriptBrowserEnv.reset() got an unexpected keyword argument 'ofptions'")
+Traceback (most recent call last):
+  File "/Users/neel/fa24_research/search-agents/run.py", line 538, in test
+    _ = env.reset(ofptions={"config_file": config_file})
+TypeError: ScriptBrowserEnv.reset() got an unexpected keyword argument 'ofptions'
